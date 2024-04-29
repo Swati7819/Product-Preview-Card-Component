@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(243, 234, 227);
+
+
+}
+
+.container {
+    margin: 1em;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.part-1 {
+    min-height: 300px;
+    width: 100%;
+    background-image: url("static/images/image-product-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.part-1 img {
+    min-height: 100%;
+    max-width: 100%;
+}
+
+
+.part-2 {
+    padding: 2em;
+
+}
+
+
+.part-2 h1 {
+    color: rgb(27, 35, 41);
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 0;
+
+}
+
+.part-2 p {
+    color: rgb(169, 171, 179);
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.part-2 span {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: rgb(171, 171, 175);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+.part-2 .price {
+    display: inline-block;
+    color: rgb(61, 129, 104);
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 0;
+}
+
+.part-2 .strikethrough-discount {
+    text-decoration: line-through;
+    letter-spacing: 0px;
+    margin-left: 1em;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.part-2 .btn {
+    background-color: rgb(61, 129, 104);
+    ;
+    padding: 0.5em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+
+}
+
+
+.part-2 .btn:hover {
+    background-color: rgb(26, 64, 49);
+    cursor: pointer;
+}
+
+.part-2 .btn p {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+
+
+@media screen and (min-width:601px) {
+
+    .container {
+        flex-direction: row;
+        /* justify-content: space-between; */
+        max-width: 600px;
+        margin: 100px auto;
+
+
+    }
+
+    .part-1,
+    .part-2 {
+        max-width: 50%;
+        box-sizing: border-box;
+    }
+
+
+
+    .part-1 {
+        min-height: 520px;
+        width: 100%;
+        background-image: url("static/images/image-product-desktop.jpg");
+        background-size: cover;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+
+
+
+    }
+
+}
