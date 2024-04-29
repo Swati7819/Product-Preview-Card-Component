@@ -29,7 +29,7 @@ To view the product preview card, open the `index.html` file in your web browser
 
 To get a local copy of the project, clone the repository to your local machine using the following command:
 
-git clone https://github.com/Swati7819/product-preview-card.git
+git clone https://github.com/Swati7819/product-preview-card-component.git
 
 
 ## Usage
